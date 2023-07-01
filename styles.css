@@ -4,7 +4,7 @@
     margin: 0;
     box-sizing: border-box;
   }
-  body {
+body {
     font-family: "Inter", sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -13,9 +13,11 @@
     color: white;
     text-decoration: none;
   }
+  
   ul {
     list-style: none;
   }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -30,28 +32,29 @@
     padding: 1rem;
     font-size: 1rem;
   }
-nav .brand {
+  
+  nav .brand {
     font-size: 1.5rem;
     font-weight: bold;
   }
+  
   nav .nav-items a {
     margin: 0 1rem;
   }
   .container{
     padding: 40px;
-    padding-bottom: 10px;
+}
+.inputs{
     display: flex;
-  }
-  .container p{
-    margin-top: 10px;
-    font-size: 20px;
-  }
-  .buttons-container{
-    display: flex;
+    flex-flow: column ;
     gap: 10px;
-    margin-top: 20px;
-  }
-  .buttons-container button{
+}
+.inputs input{
+    height: 40px;
+    padding: 10px;
+}
+button{
+    margin-top: 10px;
     color: white;
     background-color: black;
     width: 150px;
@@ -60,7 +63,15 @@ nav .brand {
     font-size: 18px;
     cursor: pointer;
   }
-  .image img{
-    height: 80%;
-    width: 100%;
-  }
+  .red{
+    color:red;
+    font-weight: 600;
+  } 
+.green{
+    color: rgb(8, 113, 8);
+    font-weight: 600;
+}
+  
+#message{
+    display: none;
+}
